@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>jQuery UI Example Page</title>
+		<link type="text/css" href="css/smoothness/jquery-ui-1.8.5.custom.css" rel="stylesheet" />
+        <link id="bespin_base" href=".">
+        <link rel="stylesheet" type="text/css" href="BespinEmbedded.css">
+		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.5.custom.min.js"></script>
+        <script type="text/javascript" src="BespinEmbedded.js"></script>
+		<script type="text/javascript">
+            window.onBespinLoad = function() {
+                setTimeout("$('#tabs').tabs();", 250);
+            };
+		</script>
+		<style type="text/css">
+			/*demo page css*/
+			body{ font: 62.5% "Trebuchet MS", sans-serif; margin: 50px;}
+			.demoHeaders { margin-top: 2em; }
+			#dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
+			#dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
+			ul#icons {margin: 0; padding: 0;}
+			ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
+			ul#icons span.ui-icon {float: left; margin: 0 4px;}
+
+            .bespin {
+                width: 480px;
+                height: 320px;
+            }
+        </style>
+	</head>
+	<body>
+	<h1>Just trying to embed Bespin inside jQuery UI Tabs...</h1>
+	<p style="font-size: 1.3em; line-height: 1.5; margin: 1em 0; width: 50%;">You should be seeing 3 different tabs with 3 different instances of Bespin. </p>
+
+		<!-- Tabs -->
+		<h2 class="demoHeaders">Tabs</h2>
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">One</a></li>
+				<li><a href="#tabs-2">Second</a></li>
+				<li><a href="#tabs-3">Third</a></li>
+			</ul>
+			<div id="tabs-1"><div id="editor1" class="bespin" data-bespinoptions='{ "stealFocus": true }'>This is Bespin number one...</div></div>
+			<div id="tabs-2"><div id="editor2" class="bespin" data-bespinoptions='{ "stealFocus": false }'>... and number two...</div></div>
+			<div id="tabs-3"><div id="editor3" class="bespin" data-bespinoptions='{ "stealFocus": false }'>... and finally three :)</div></div>
+		</div>
+	</body>
+</html>
+
+

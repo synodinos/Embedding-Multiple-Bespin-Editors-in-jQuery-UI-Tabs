@@ -1,0 +1,1 @@
+Trying to load multiple Bespin editors in jQuery UI tabs. [Panagiotis](http://github.com/past) forwarded to an [email](http://groups.google.com/group/skywriter/browse_thread/thread/2952a5425b69a3cd) from the list that talked about introducing a delay that fixes all our issues.
